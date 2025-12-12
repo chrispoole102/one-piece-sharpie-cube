@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import NextImage from "next/image";
 import styles from "@/app/card-list/cardDisplay.module.css";
 import {primaryFont} from "@/app/ui/fonts";
-export default function CardDisplay({card, appearDelay, ...rest}: any) {
+export default function CardDisplay({card, appearDelay, showCount, ...rest}: any) {
 
     if (card == null)
         card = {src: '', name: '', count: '', changes: ''}
@@ -31,7 +31,7 @@ export default function CardDisplay({card, appearDelay, ...rest}: any) {
             {card.src != '' && <img className={`fade-in w-full h-auto ${styles.placeholderAbsolute} ${!loaded && 'hidden'} ${styles.cardDisplayTransition}`} src={card.src} alt={'y'} width={600} height={838}></img>}
             {card.name != '' && <h3 className={`fade-in font-bold text-lg ${primaryFont.className}`}>{card.name}</h3>}
             {card.changes != '' && <p className={`fade-in ${primaryFont.className}`}>{card.changes}</p>}
-            {card.count != '' && <p className={`fade-in font-bold top-10 left-2 absolute ${primaryFont.className} ${styles.countText}`}>{'x'+card.count}</p>}
+            {card.count != '' && showCount && <p className={`fade-in font-bold top-10 left-2 absolute ${primaryFont.className} ${styles.countText}`}>{'x'+card.count}</p>}
         </div>
     )
 }

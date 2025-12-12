@@ -1,7 +1,6 @@
-import {primaryFont} from "@/app/ui/fonts";
 import PackGeneration from "@/app/pack-simulator/PackGeneration";
-import {ReactNode, Suspense} from "react";
-export default async function PackSimulatorPage() {
+
+export default async function ServerDataFetching() {
 
     const sheets = ['black', 'red', 'blue', 'green', 'purple', 'yellow'];
 
@@ -13,8 +12,6 @@ export default async function PackSimulatorPage() {
         fullCardListObject[sheets[i]] = data;
     }
     return (
-        <div className={'basis-75/100'}>
-            <PackGeneration fullCardList={fullCardListObject}></PackGeneration>
-        </div>
+        <PackGeneration fullCardList={fullCardListObject}></PackGeneration>
     )
 }

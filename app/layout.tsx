@@ -5,7 +5,7 @@ import Header from "@/app/components/Header";
 
 export const metadata: Metadata = {
   title: "One Piece Sharpie Cube",
-  description: "one piece sharpie cube",
+  description: "Learn more about the One Piece Sharpie Cube, view the card list and simulate pack openings",
 };
 
 export default function RootLayout({children}: Readonly<{ children: React.ReactNode; }>) {
