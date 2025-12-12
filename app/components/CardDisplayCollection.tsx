@@ -2,7 +2,7 @@
 
 import CardDisplay from "@/app/card-list/CardDisplay";
 import {useEffect, useState} from "react";
-export default function CardDisplayCollection({cards, showCount}) {
+export default function CardDisplayCollection({cards, showCount}: {cards: any[], showCount: boolean}) {
 
     return (
         <div className={'p-3 grid grid-cols-2 md:grid-cols-3 gap-3'}>

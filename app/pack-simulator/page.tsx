@@ -1,20 +1,21 @@
 import {primaryFont} from "@/app/ui/fonts";
 import PackGeneration from "@/app/pack-simulator/PackGeneration";
 import {ReactNode, Suspense} from "react";
-export default async function PackSimulatorPage() {
+import ServerDataFetching from "@/app/pack-simulator/ServerDataFetching";
+export default function PackSimulatorPage() {
 
     const sheets = ['black', 'red', 'blue', 'green', 'purple', 'yellow'];
 
-    let fullCardListObject = {}
-    for (let i = 0; i < sheets.length; i++)
-    {
-        const res = await fetch('https://sheetdb.io/api/v1/e1apufzvfk104?sheet='+sheets[i])
-        const data = await res.json();
-        fullCardListObject[sheets[i]] = data;
-    }
     return (
         <div className={'basis-75/100'}>
-            <PackGeneration fullCardList={fullCardListObject}></PackGeneration>
+            <Suspense fallback={<Loading/> as ReactNode}>
+                <ServerDataFetching></ServerDataFetching>
+            </Suspense>
         </div>
+    )
+}
+function Loading() {
+    return (
+        <div className={`p-5 text-lg font-bold ${primaryFont.className}`}>Loading...</div>
     )
 }

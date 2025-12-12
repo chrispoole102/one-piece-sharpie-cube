@@ -1,10 +1,10 @@
 const LEADERS_AT_FIRST_X_PLACES = 4;
 const COLORS = ['black', 'red', 'blue', 'purple', 'yellow', 'green']
-export default async function generatePack(fullCardList) {
+export default async function generatePack(fullCardList: any) {
 
     //TODO: Make it closer to reality by having count come into effect
 
-    let pack = [];
+    let pack: any[] = [];
 
     console.log(fullCardList);
     console.log(COLORS);
@@ -20,7 +20,7 @@ export default async function generatePack(fullCardList) {
         console.log("random leader: "+leader.name);
         return leader;
     }
-    function randomCardFromColor(color) {
+    function randomCardFromColor(color: string) {
         let cardsInColor = fullCardList[color];
         let card = cardsInColor[Math.floor(Math.random() * (cardsInColor.length - 4)) + 4];
         console.log("random card: "+card.name)
