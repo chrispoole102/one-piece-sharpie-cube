@@ -28,6 +28,10 @@ export default function NavBar() {
 
     const content = [
         {
+            label: "Home",
+            page: "/"
+        },
+        {
             label: "Rules",
             page: "/rules"
         },
