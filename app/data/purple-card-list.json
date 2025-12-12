@@ -1,0 +1,22 @@
+{
+  "cards": [
+    {
+      "name": "EB02 BRAND NEW WORLD",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/EB02/EB02-040_EN.webp",
+      "amount": 2
+    },
+    {
+      "name": "OP08 Perespero",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-068_EN.webp",
+      "amount": 2
+    },
+    {
+      "name": "OP03 Top Knot",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP03/OP03-074_EN.webp",
+      "amount": 2
+    }
+  ]
+}

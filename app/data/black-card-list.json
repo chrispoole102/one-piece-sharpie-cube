@@ -1,0 +1,76 @@
+{
+  "cards": [
+    {
+      "name": "EB02 Kokoro no Chizu",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/EB02/EB02-050_EN.webp",
+      "amount": 2
+    },
+    {
+      "name": "OP03 Brannew",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP03/OP03-089_p2_EN.webp",
+      "amount": 2
+    },
+    {
+      "name": "OP02 Donquixote Rosinante",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP02/OP02-108_EN.webp",
+      "amount": 2
+    },
+    {
+      "name": "ST19 Hina",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST19/ST19-004_EN.webp",
+      "amount": 2
+    },
+    {
+      "name": "OP02 Isuka",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP02/OP02-094_EN.webp",
+      "amount": 2
+    },
+    {
+      "name": "OP11 Bogard",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-093_EN.webp",
+      "amount": 1
+    },
+    {
+      "name": "OP11 Kuzan",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-084_EN.webp",
+      "amount": 1
+    },
+    {
+      "name": "OP02 Sakazuki",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP02/OP02-099_EN.webp",
+      "amount": 1
+    },
+    {
+      "name": "OP13 Morgans",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-093_EN.webp",
+      "amount": 1
+    },
+    {
+      "name": "OP05 Shirahoshi",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-082_p1_EN.webp",
+      "amount": 1
+    },
+    {
+      "name": "OP05 Mansherry",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-088_EN.webp",
+      "amount": 1
+    },
+    {
+      "name": "ST06 Tashigi",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST06/ST06-006_p1_EN.webp",
+      "amount": 1
+    }
+  ]
+}

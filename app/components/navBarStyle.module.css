@@ -1,0 +1,8 @@
+
+
+.navBar {
+    height: calc(var(--spacing) * 12);
+    @media (min-width: 768px) {
+        height: 93.2vh;
+    }
+}

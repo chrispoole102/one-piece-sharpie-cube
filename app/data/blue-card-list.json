@@ -1,0 +1,22 @@
+{
+  "cards": [
+    {
+      "name": "EB02 Hope",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/EB02/EB02-031_EN.webp",
+      "amount": 2
+    },
+    {
+      "name": "OP03 Sogeking",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP03/OP03-122_EN.webp",
+      "amount": 2
+    },
+    {
+      "name": "OP03 Gum-Gum Giant Gavel",
+      "description": "No changes",
+      "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP03/OP03-055_p1_EN.webp",
+      "amount": 2
+    }
+  ]
+}
