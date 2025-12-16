@@ -5,18 +5,9 @@ import { usePathname } from 'next/navigation'
 import Link from "next/link";
 import {getImageProps} from "next/image";
 import styles from "./navBarStyle.module.css";
+import {getBackgroundImage} from "@/app/lib/getBackgroundImage";
 export default function NavBar() {
 
-    function getBackgroundImage(srcSet = '') {
-        const imageSet = srcSet
-            .split(', ')
-            .map((str) => {
-                const [url, dpi] = str.split(' ')
-                return `url("${url}") ${dpi}`
-            })
-            .join(', ')
-        return `image-set(${imageSet})`
-    }
     const {
         props: { srcSet },
     } = getImageProps({ alt: '', width: 750, height: 1221, src: '/bg-map.jpg' })
@@ -40,7 +31,7 @@ export default function NavBar() {
             page: "/card-list"
         },
         {
-            label: "Pack Simulator",
+            label: "Pack Sim",
             page: "/pack-simulator"
         }
     ]

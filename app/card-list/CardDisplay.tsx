@@ -9,6 +9,9 @@ export default function CardDisplay({card, appearDelay, showCount, ...rest}: any
     if (card == null)
         card = {src: '', name: '', count: '', changes: ''}
 
+    if (card.name != '' && card.src == '')
+        card.src = "https://one-piece-sharpie-cube-cards.s3.us-east-1.amazonaws.com/card-not-uploaded.webp";
+
     const [loaded, setLoaded] = useState(false);
     let timeout: NodeJS.Timeout;
 
@@ -29,9 +32,9 @@ export default function CardDisplay({card, appearDelay, showCount, ...rest}: any
         <div {...rest}>
             <NextImage className={`w-full h-auto ${loaded && styles.placeholderTransition}`} src={'/card-back.png'} alt={''} height={600} width={429}></NextImage>
             {card.src != '' && <img className={`fade-in w-full h-auto ${styles.placeholderAbsolute} ${!loaded && 'hidden'} ${styles.cardDisplayTransition}`} src={card.src} alt={'y'} width={600} height={838}></img>}
-            {card.name != '' && <h3 className={`fade-in font-bold text-lg ${primaryFont.className}`}>{card.name}</h3>}
-            {card.changes != '' && <p className={`fade-in ${primaryFont.className}`}>{card.changes}</p>}
-            {card.count != '' && showCount && <p className={`fade-in font-bold top-10 left-2 absolute ${primaryFont.className} ${styles.countText}`}>{'x'+card.count}</p>}
+            {card.name != '' && <h3 className={`fade-in mt-3 font-bold text-xl lg:text-2xl ${primaryFont.className}`}>{card.name}</h3>}
+            {card.changes != '' && <p className={`fade-in mb-6 text:lg lg:text-xl ${primaryFont.className}`}>{card.changes}</p>}
+            {card.count != '' && showCount && <p className={`fade-in font-bold top-10 text-xl lg:text-2xl left-2 absolute ${primaryFont.className} ${styles.countText}`}>{'x'+card.count}</p>}
         </div>
     )
 }
